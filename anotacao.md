@@ -14,24 +14,25 @@
 > - Existem dois tipos de comentário em Python
     >   - (#) - O comentário só funciona na mesma linha em que a cerquilha .
     >   - (""" """) - Não é extatamante um comentario já que o interpretador lê o que esta escrito, mas é utilizado em alguns casos caso queira ser feito um comentário multilinha. É chamado de DOCSTRING. Pode ser usado aspas duplas ou simples.
-
 > - print(1 + 1) - Imprimir na tela
+>___
+>___
 
-___
-___
-
-- 14/05/2026
-
+**14/05/2026**
+>___
+>___
 > #### **Tipos de dados**
+> ##### **Tipos PRIMITIVOS**
 >
 > - Python - Linguagem de programação
 > - Tipo de tipagem - Dinâmica / Forte
 >   - Tipagem dinâmica
 >       - " É uma caracteristica de linguagens de programação onde o tipo de um dado de uma variável (número , texto, booleano)é verificado e definido em tempo de execução (runtime), e não durante a compilação. Isso permite que variáveis udem de tipo ao lngo o código sem declaração prévia " - Alura<br /><br /> Ou seja, o Python já sabe o tipo da informação que estams passando para ele.<br /><br />
 >   - Tipagem Forte
->       - " É um conceito em linguagens de programação onde o tipo de dado de uma variavel é estritamente respeitado, proibindo operações entre tipos incompatíveis (como somar número e texto) sem conversão explícita. Ela garante maior seguranç e estabilidade, reduzindo bugs, pois impede coversões automáticas indesejadas " - IBM<br /><br />
+>       - " É um conceito em linguagens de programação onde o tipo de dado de uma variavel é estritamente respeitado, proibindo operações entre tipos incompatíveis (como somar número e texto) sem conversão explícita. Ela garante maior seguranç e estabilidade, reduzindo bugs, pois impede coversões automáticas indesejadas " - IBM
 >
->#### **Tipo STRING**
+>###### **Tipo STRING**
+>
 > - str -> string -> texto
 > - Strings são textos que estão dentro de aspas
 >   - Essas aspas podem ser
@@ -39,10 +40,8 @@ ___
 >           - print('abc')
 >       - Aspas duplas ("")
 >           - print("abc")
-
+><br><br/>
 >
-><br><br/>
-><br><br/>
 > Não é possivel usar aspas dentro de uma string (print("Heloisa " Duarte")). Para isso é usado um caractere **escape**.
 > - " **Uma sequência de escape** é uma combinação de caracteres, iniciada por uma barra invertida ( \ ), sada em programação para representar caracteres especiais, não impriíveis ou de controle dentro de uma string (texto). Ela altera o significado do caractere seguinte para que o compilador o interprete de forma especial. " - IBM
 >   - print("Heloisa \ "Duarte")
@@ -53,14 +52,15 @@ ___
 >
 > Mas, para evitar uma confusão no código, basta usar um truque e por aspas simples junto com as aspas duplas ( até porque, asim fica muito menos desorganizado e bagunçado ).
 >   - print('Heloisa "Duarte" ')
-><br><br/>
->#### **Tipo INT e FLOAT**
-> - int -> Números inteiros
+>
+>###### **Tipo INT e FLOAT**
+>
+> - **int** -> Números inteiros
 > - O ipo **int** representa qualquer número positivo ou negativo. **int** sem inal é considerado positivo.
 >   - print(11) - int
 >   - print(-11) - int
-><br><br/>
-> - float - Número de ponto flutuante
+>
+> - **float** - Número de ponto flutuante
 > - O tipo **float** representa qualquer números positivo ou negativo com ponto flutuante. **float** sem sinal é considerado positivo.
 >   - print(1.1) - float
 >   - print(10.11) - float
@@ -69,3 +69,30 @@ ___
 > -  A **função type** mostra o tipo que o Python inferiu ao valor
 >   - O **type**, na verdade, é uma **classe**, mas como se inicia com lera minúscula ( que não é padrao das classes, pois elas iniciam com maiúscula), é chamada de **função** por costume ( já que as funções são iniciadas por letras minúsculas ).
 >       - print(type("Heloisa"))
+>___
+>___
+**15/05/2026**
+>___
+>___
+>
+>###### **Tipo BOOL (bolean)**
+>
+> - Ao questionar algo m um programa, só existem duas respostas possíveis: sim **(True)** ou não **(False)**
+> - Existem vários operadores para "questionar". Dentre eles o *==*, que é um **operador lógico** que questiona se um valor e igual a outro.
+>   - print(10 == 10) - sim => **True** (verdadeiro)
+>       - **True** e **False** são sempre escritos com a primeira letra maiúscula ( true e false em minúsculo nào existe em Python)
+>
+> ###### **Coerção de Tipos (convertendo um tipo para outro )**
+>
+> - Tambem pode aparecer como **conversão de tipos**, **coerção**, **type convertion**, **typecasting**, **coercion**.
+> - É o ato de cnverter um tipo em outro.
+> - Tipos imutáveis e primitívos: str, int, float e bool.
+>
+>**OBS** - Na programação existe algo chamado **Polimorfismo**
+>   - **Polimorfismo na programação orientada a objetos significa que a mesma ação pode er cmortamentos diferentes dependendo do objeto**
+>       - print(1 + 1) = 2 -> Soma
+>       - print("a" + "b") = ab -> Concatenação
+><br><br/>
+> - Coerção
+>   - print("1", type("1")); -> string
+>   - print(int("1"), type(int("1"))); -> int
